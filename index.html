@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+
+    <meta
+      name="description"
+      content="A simple and user-friendly sign up form that allows new users to create an account by entering their details securely."
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header of the webpage -->
+    <header>
+      <h3>Signup</h3>
+    </header>
+
+    <!-- main content of webpage -->
+    <main>
+      <div class="container">
+        <div class="form-container">
+          <h2 class="form-heading">Signup</h2>
+          <form>
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" required />
+            <input
+              type="confirm-password"
+              placeholder="Confirm Password"
+              required
+            />
+            <input
+              type="text"
+              placeholder="MM/DD/YYYY"
+              pattern="\d{2}/\d{2}/\d{4}"
+              required
+            />
+
+            <div class="radio-group">
+              <input type="radio" id="student" name="role" value="student" />
+              <label for="student">Student</label>
+
+              <input type="radio" id="employee" name="role" value="employee" />
+              <label for="employee">Employee</label>
+            </div>
+
+            <div class="checkbox-group">
+              <input type="checkbox" id="terms" name="terms" required />
+              <label for="terms">I agree to all the Terms and conditions</label>
+            </div>
+
+            <button class="form-btn" type="submit">Signup</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
